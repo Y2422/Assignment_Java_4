@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/stylesheet.css">
+</head>
+
+<body>
+
+    <div class="homepage d-none">
+        <nav class="navbar">
+            <div class="container-fluid fixed-top p-3 shadow">
+                <a class="navbar-brand text-white ms-5">SMART LOGIN </a>
+
+                <button class="logoutBtn btn btn-outline-warning me-4" type="submit">Logout</button>
+
+            </div>
+        </nav>
+        <div class="box d-flex justify-content-center align-items-center h-100">
+        <div class="welcome shadow w-50 p-5 align-self-center" >
+            <h2 class="welcomemsg text-center">welcome</h2>
+          </div>  
+        </div>
+        </div>
+    </div>
+    <div class="signUpPage ">
+        <div class="box w-50 mx-auto py-3 shadow mt-5 ">
+            <h2 class="text-center">Smart Login</h2>
+            <div class="userInformation d-flex flex-column justify-content-center align-items-center row-gap-3 p-3">
+                <input autocomplete="on" type="text" id="userName" placeholder="Enter your name" class="form-control">
+                <p class="d-none p-0">This mail is already registered, Please signin</p>
+                <input type="mail" autocomplete="on" oninput="mailValidation(this)" id="registrationMail"
+                    placeholder="Enter your mail" class="form-control">
+                <p class="d-none p-0">Please enter a valid email</p>
+                <input type="password" name="password" placeholder="Enter your password" class=" form-control">
+
+                <button class="btn btn-outline-primary text-white w-100" onclick="userRegistration()">sign up</button>
+            </div>
+            <p class="transitions mt-4 ms-3">You have an account? <button class="existinguserSignIn">Sign in</button></p>
+
+        </div>
+    </div>
+
+    <div class="signInPage h-100 w-100 d-none">
+        <div class="w-50 mx-auto py-3 shadow mt-5 ">
+            <h2 class="text-center">Smart Login</h2>
+            <div class="userInformation d-flex flex-column justify-content-center align-items-center row-gap-3 p-3">
+
+                <p class="d-none p-0">This mail is not registered, Please sign Up</p>
+                <input type="mail" autocomplete="on" oninput="mailValidation(this)" id="signInMail"
+                    placeholder="Enter your mail" class="form-control">
+                <p class="d-none p-0">Please enter a valid email</p>
+                <input name="password" type="password" placeholder="Enter your password" class="form-control">
+
+                <button class="btn btn-outline-primary text-white w-100" onclick="signIn()">sign in</button>
+            </div>
+            <p class="transitions mt-4 text-center">Don't have an account? <button class="noaccountSignUp border-0">Sign up</button></p>
+
+        </div>
+    </div>
+    <script src="./CSS/JS/main.js"></script>
+    <script src="./CSS/bootstrap.bundle.js"></script>
+</body>
+
+</html>

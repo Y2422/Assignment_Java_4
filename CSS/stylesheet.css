@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #24353F;
+}
+
+body, .signInPage, .signUpPage,.homepage {
+    background-color:#24353F ;
+    height: 100vh;
+
+}
+
+h2{
+    color: #17A2B8;
+}
+
+.transitions{
+    color:white;
+}
+
+.noaccountSignUp, .existinguserSignIn{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.logoutBtn:hover{
+    background-color: #FFC107;
+    color:white;
+}
+
