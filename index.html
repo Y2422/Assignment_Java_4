@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+
+    <div class="home d-none ">
+        <nav class="navbar position-sticky shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white fs-3 ms-4">SMART LOGIN</a>
+                <button class="btn btn-outline-warning me-4" id="logOut" type="submit">Logout</button>
+
+            </div>
+        </nav>
+        <div class="welcomingmsg d-flex justify-content-center align-items-center">
+            <h2 class="shadow-lg w-75 p-5 text-center">Welcome </h2>
+
+        </div>
+    </div>
+    <div class="login container mt-5 mx-auto shadow d-none">
+        <H2 class="text-center text-info ">Smart Login System</H2>
+        <div class="row p-3 d-flex flex-column row-gap-3">
+            <input id="mail1" type="mail" placeholder="Enter your mail" class="form-control" required>
+            <input id="password1" type="password" placeholder="Enter your password" class="form-control" required>
+            <button class="btn btn-outline-info" id="loginBtn" onclick="SignIn()"> Login </button>
+            <p>Dont't have an account? <span><a href="" onclick="SignUp()">Sign Up</a></span></p>
+        </div>
+    </div>
+
+    <div class="signingUpPage">
+        <div class="signUp container mt-5 mx-auto shadow ">
+            <H2 class="text-center text-info ">Smart Login System</H2>
+            <div class="row p-3 d-flex flex-column row-gap-3">
+                <input id="name" type="text" placeholder="Enter your name" class="form-control" required>
+                <input id="mail2" type="mail" placeholder="Enter your mail" class="form-control" required>
+                <input id="password2" type="password" placeholder="Enter your password" class="form-control" required>
+                <button class="btn btn-outline-info" id="successfulSignBtn"> Sign Up </button>
+                <p>You have an account? <span><a id="signBtn" href="" onclick="SignIn()">Signin</a></span></p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <script src="./CSS/bootstrap.bundle.js"></script>
+    <script src="./CSS/JS/java.js"></script>
+</body>
+
+</html>

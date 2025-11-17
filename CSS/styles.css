@@ -1,0 +1,18 @@
+.welcomingmsg{
+    height: 100vh;
+    background-color: #24353F;
+    color:#17A2B8 ;
+
+}
+
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar{
+    background-color:#24353F ;
+}
+
